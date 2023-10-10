@@ -1,0 +1,29 @@
+.button {
+    width: calc(100% - 4rem);
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    background: #fff;
+    color: #3570c6;
+}
+
+.mainColor {
+    background: #3570C6 !important;
+    color: #fff !important;
+}
+
+.disabledButton {
+    width: calc(100% - 4rem);
+    height: 2.5rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    background: #fff;
+    color: #3570c6;
+    opacity: 0.4;
+}

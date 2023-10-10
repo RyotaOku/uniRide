@@ -1,0 +1,272 @@
+.wrap {
+    width: 100%;
+    height: 6rem;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2rem;
+    align-items: center;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+}
+
+.switch {
+    position: absolute;
+    top: 0.6rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 2.4rem;
+    background: #bcbcbc;
+    height: 4px;
+    border-radius: 8px;
+}
+
+.navigation {
+    width: 4rem;
+    font-size: 0.8rem;
+    color: #7e7e7e;
+    white-space: nowrap;
+    position: relative;
+    height: 60%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.navigation::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3rem;
+    height: 2.4rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.taxi::before {
+    content: "";
+    background-image: url('/images/taxi.png');
+    background-position: center;
+    background-size: 60%;
+}
+
+#on::before {
+    content: '';
+    background-image: url('/images/taxiBlue.png');
+    background-position: center;
+    background-size: 60%;
+}
+
+.profile::before {
+    content: "";
+    /* background-image: url(/images/svg/Icon/user.svg);
+    background-position: center;
+    background-size: contain; */
+}
+
+.menu::before {
+    content: "";
+    background-image: url('/images/bars.png');
+    background-position: center;
+    background-size: 60%;
+}
+
+.openWrap {
+    width: 100%;
+    height: 40vh;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    border-radius: 8px 8px 0 0;
+    padding: 0 2rem;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+    animation: 0.5s navigationOpen forwards;
+}
+
+@keyframes navigationOpen {
+    0% {
+        height: 6rem;
+    }
+
+    100% {
+        height: 40vh;
+    }
+}
+
+.tags {
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+    display: flex;
+    margin-top: 2rem;
+    padding: 0 2rem;
+    overflow-x: scroll;
+}
+
+.tags .check {
+    display: none;
+}
+
+.tags .label {
+    border: 1px solid #dadada;
+    padding: 0.2rem 1.2rem 0.2rem 2rem;
+    color: #9c9c9c;
+    position: relative;
+    border-radius: 6px;
+    user-select: none;
+    margin-right: 0.4rem;
+}
+
+.tags .label::before {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #000;
+    top: 0;
+    bottom: 0;
+    left: 0.4rem;
+    margin: auto 0;
+    width: 1rem;
+    height: 1rem;
+}
+
+.tags .label:nth-of-type(1)::before {
+    background: url('/images/homeIcon.png') no-repeat;
+    background-size: 100%;
+}
+
+.tags .label:nth-of-type(2)::before {
+    background: url('/images/star.png') no-repeat;
+    background-size: 100%;
+}
+
+.tags .label:nth-of-type(3)::before {
+    background: url('/images/bookmark.png') no-repeat;
+    background-size: contain
+}
+
+.tags .label:nth-of-type(4)::before {
+    background: url('/images/near.png') no-repeat;
+    background-size: 100%;
+}
+
+.tags .check:checked+.label {
+    background: #3570C6;
+    color: #fff;
+    border: 1px solid #3570C6;
+    font-weight: bold;
+}
+
+.searchWrap {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nowSpotWrap {
+    width: 100%;
+    height: 3rem;
+    position: relative;
+}
+
+.nowSpotWrap::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    left: 1.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    z-index: 3;
+}
+
+.nowSpotWrap:first-child::before {
+    background: url('/images/location.png') no-repeat;
+    background-size: contain;
+}
+
+.nowSpotWrap:last-of-type:before {
+    background: url('/images/mark.png') no-repeat;
+    background-size: contain;
+}
+
+.nowSpotWrap .nowSpot {
+    background: #f6f6f6;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding-left: 3.8rem;
+}
+
+.nowSpotWrap:first-child .nowSpot {
+    position: relative;
+    z-index: 2;
+}
+
+.nowSpotWrap:nth-child(2) .nowSpot {
+    position: relative;
+    z-index: 0;
+}
+
+.nowSpotWrap:nth-child(2) {
+    margin-bottom: 1.5rem;
+}
+
+.nowSpotWrap:first-child {
+    margin-bottom: 3rem;
+}
+
+.nowSpotWrap:first-child::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1.6rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #a1a1a1;
+    border-left: 1px solid #a1a1a1;
+    width: 0.8rem;
+    height: 0.8rem;
+    transform: rotate(-45deg);
+}
+
+.nextButton {
+    width: 100% !important;
+}
+
+.location {
+    opacity: 0;
+    height: 5rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 1.5rem;
+    padding-top: 2rem;
+    background: #f6f6f6;
+    background: #fff;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 8px 8px;
+    z-index: 1;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.nowSpotWrap:first-child .nowSpot:focus+.location {
+    opacity: 1;
+}
+
+.step2 {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    background: url('/images/step2.png') no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}

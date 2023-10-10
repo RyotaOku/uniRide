@@ -1,0 +1,57 @@
+.mainWrap {
+    padding: 1.4rem 0;
+    color: #fefefe;
+    text-align: center;
+}
+
+.mainWrap h1 {
+    font-size: 1.5rem;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    font-family: "Noto Sans Javanese";
+    color: #fefefe;
+    text-align: center;
+    padding-top: 2rem;
+    /* background: radial-gradient(rgb(22, 135, 237), rgb(47, 91, 135)); */
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main_text {
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.map {
+    margin-top: 2rem;
+    margin: 2rem auto 0;
+    background: url('/images/phone_scr.png') no-repeat;
+    background-position: top center;
+    width: 90%;
+    height: 80vh;
+}
+
+.indicator {
+    border: 1px solid #000;
+    display: flex;
+}
+
+.indicator span {
+    background: gray;
+    width: 2rem;
+    height: 2rem;
+    display: block;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+
+span.active {
+    background: #000 !important;
+}

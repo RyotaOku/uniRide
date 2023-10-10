@@ -1,0 +1,13 @@
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.progress {
+    width: 5rem;
+    height: 5rem;
+    margin: calc(100vh / 2 - 5rem / 2) auto 0 auto;
+}
