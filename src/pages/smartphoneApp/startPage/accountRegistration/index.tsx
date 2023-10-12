@@ -3,8 +3,8 @@ import { useState, useEffect, useRef, RefObject, ChangeEvent } from "react";
 import Button from "@/components/smartphoneApp/common/Button";
 import style from "@/styles/components/smartphoneApp/startPage/accountRegistration/account.module.css";
 import { Notification } from "@/components/smartphoneApp/common/Notification";
-import { authenticate } from "./actioncreator";
-import { generateNumber } from "./actioncreator";
+import { authenticate } from "../../../../actions/actioncreator";
+import { generateNumber } from "../../../../actions/actioncreator";
 import { AccessModal } from '@/components/smartphoneApp/common/Request';
 
 // この辺の型定義は時間がないためとはいえひどすぎるな...。
