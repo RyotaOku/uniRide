@@ -188,7 +188,7 @@ function Authentication(props: name2) {
                 </div>
                 {/* ダミー。クリックしても再送信されない。 */}
                 <a href="#" className={style.resend}>
-                    認証コードを再送信するｓ
+                    認証コードを再送信する
                 </a>
             </div>
         </>
